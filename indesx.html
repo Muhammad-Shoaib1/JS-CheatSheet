@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Cheat Sheet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript Cheat Sheet</h1>
+    <input type="text" id="searchInput" placeholder="Search..." class="search-box">
+
+    <div class="cheat">
+      <h2>Function Initialization</h2>
+      <pre><code>function myFunction() { /* Function body */ }</code></pre>
+      <button class="copy-btn" data-code="function myFunction() { /* Function body */ }">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Arrow Function</h2>
+      <pre><code>const myFunction = () => { /* Function body */ };</code></pre>
+      <button class="copy-btn" data-code="const myFunction = () => { /* Function body */ };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Variable Declaration (var)</h2>
+      <pre><code>var x = 10;</code></pre>
+      <button class="copy-btn" data-code="var x = 10;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Variable Declaration (let)</h2>
+      <pre><code>let x = 10;</code></pre>
+      <button class="copy-btn" data-code="let x = 10;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Variable Declaration (const)</h2>
+      <pre><code>const x = 10;</code></pre>
+      <button class="copy-btn" data-code="const x = 10;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Template Literals</h2>
+      <pre><code>const message = `Hello, ${name}!`;</code></pre>
+      <button class="copy-btn" data-code="const message = `Hello, ${name}!`;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Concatenation</h2>
+      <pre><code>const message = 'Hello, ' + name + '!';</code></pre>
+      <button class="copy-btn" data-code="const message = 'Hello, ' + name + '!';">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object Creation</h2>
+      <pre><code>const person = { name: 'John', age: 30 };</code></pre>
+      <button class="copy-btn" data-code="const person = { name: 'John', age: 30 };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object Destructuring</h2>
+      <pre><code>const { name, age } = person;</code></pre>
+      <button class="copy-btn" data-code="const { name, age } = person;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Creation</h2>
+      <pre><code>const numbers = [1, 2, 3, 4, 5];</code></pre>
+      <button class="copy-btn" data-code="const numbers = [1, 2, 3, 4, 5];">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Destructuring</h2>
+      <pre><code>const [first, second] = numbers;</code></pre>
+      <button class="copy-btn" data-code="const [first, second] = numbers;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Map</h2>
+      <pre><code>const doubled = numbers.map(num => num * 2);</code></pre>
+      <button class="copy-btn" data-code="const doubled = numbers.map(num => num * 2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Filter</h2>
+      <pre><code>const evens = numbers.filter(num => num % 2 === 0);</code></pre>
+      <button class="copy-btn" data-code="const evens = numbers.filter(num => num % 2 === 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Reduce</h2>
+      <pre><code>const sum = numbers.reduce((acc, num) => acc + num, 0);</code></pre>
+      <button class="copy-btn" data-code="const sum = numbers.reduce((acc, num) => acc + num, 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Promise</h2>
+      <pre><code>const promise = new Promise((resolve, reject) => { /* Async code */ });</code></pre>
+      <button class="copy-btn" data-code="const promise = new Promise((resolve, reject) => { /* Async code */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Async/Await</h2>
+      <pre><code>async function fetchData() { const data = await fetch('url'); }</code></pre>
+      <button class="copy-btn" data-code="async function fetchData() { const data = await fetch('url'); }">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>SetTimeout</h2>
+      <pre><code>setTimeout(() => { console.log('Hello'); }, 1000);</code></pre>
+      <button class="copy-btn" data-code="setTimeout(() => { console.log('Hello'); }, 1000);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>SetInterval</h2>
+      <pre><code>setInterval(() => { console.log('Hello'); }, 1000);</code></pre>
+      <button class="copy-btn" data-code="setInterval(() => { console.log('Hello'); }, 1000);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener</h2>
+      <pre><code>element.addEventListener('click', () => { /* Handle click */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('click', () => { /* Handle click */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Delegation</h2>
+      <pre><code>container.addEventListener('click', (event) => { if (event.target.matches('.item')) { /* Handle item click */ } });</code></pre>
+      <button class="copy-btn"
+        data-code="container.addEventListener('click', (event) => { if (event.target.matches('.item')) { /* Handle item click */ } });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Local Storage</h2>
+      <pre><code>localStorage.setItem('key', 'value'); const value = localStorage.getItem('key');</code></pre>
+      <button class="copy-btn"
+        data-code="localStorage.setItem('key', 'value'); const value = localStorage.getItem('key');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Session Storage</h2>
+      <pre><code>sessionStorage.setItem('key', 'value'); const value = sessionStorage.getItem('key');</code></pre>
+      <button class="copy-btn"
+        data-code="sessionStorage.setItem('key', 'value'); const value = sessionStorage.getItem('key');">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>JSON Parsing</h2>
+      <pre><code>const obj = JSON.parse('{"key": "value"}');</code></pre>
+      <button class="copy-btn" data-code="const obj = JSON.parse('{" key": "value" }');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>JSON Stringify</h2>
+      <pre><code>const str = JSON.stringify({ key: 'value' });</code></pre>
+      <button class="copy-btn" data-code="const str = JSON.stringify({ key: 'value' });">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Fetch API</h2>
+      <pre><code>fetch('url').then(response => response.json()).then(data => console.log(data));</code></pre>
+      <button class="copy-btn"
+        data-code="fetch('url').then(response => response.json()).then(data => console.log(data));">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>XMLHttpRequest</h2>
+      <pre><code>const xhr = new XMLHttpRequest(); xhr.open('GET', 'url', true); xhr.onload = () => { if (xhr.status === 200) { console.log(xhr.responseText); } }; xhr.send();</code></pre>
+      <button class="copy-btn"
+        data-code="const xhr = new XMLHttpRequest(); xhr.open('GET', 'url', true); xhr.onload = () => { if (xhr.status === 200) { console.log(xhr.responseText); } }; xhr.send();">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Destructuring Assignment</h2>
+      <pre><code>const { a, b } = { a: 1, b: 2 };</code></pre>
+      <button class="copy-btn" data-code="const { a, b } = { a: 1, b: 2 };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Spread Operator</h2>
+      <pre><code>const arr = [1, 2, 3]; const newArr = [...arr, 4, 5];</code></pre>
+      <button class="copy-btn" data-code="const arr = [1, 2, 3]; const newArr = [...arr, 4, 5];">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Rest Parameters</h2>
+      <pre><code>function sum(...numbers) { return numbers.reduce((acc, num) => acc + num, 0); }</code></pre>
+      <button class="copy-btn"
+        data-code="function sum(...numbers) { return numbers.reduce((acc, num) => acc + num, 0); }">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Class Definition</h2>
+      <pre><code>class Person { constructor(name) { this.name = name; } greet() { console.log('Hello, ' + this.name); } }</code></pre>
+      <button class="copy-btn"
+        data-code="class Person { constructor(name) { this.name = name; } greet() { console.log('Hello, ' + this.name); } }">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Inheritance</h2>
+      <pre><code>class Animal { constructor(name) { this.name = name; } } class Dog extends Animal { bark() { console.log('Woof!'); } }</code></pre>
+      <button class="copy-btn"
+        data-code="class Animal { constructor(name) { this.name = name; } } class Dog extends Animal { bark() { console.log('Woof!'); } }">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Static Methods</h2>
+      <pre><code>class MathUtils { static add(a, b) { return a + b; } }</code></pre>
+      <button class="copy-btn" data-code="class MathUtils { static add(a, b) { return a + b; } }">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Symbol Creation</h2>
+      <pre><code>const sym = Symbol('description');</code></pre>
+      <button class="copy-btn" data-code="const sym = Symbol('description');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Generators</h2>
+      <pre><code>function* generator() { yield 1; yield 2; } const gen = generator(); console.log(gen.next().value);</code></pre>
+      <button class="copy-btn"
+        data-code="function* generator() { yield 1; yield 2; } const gen = generator(); console.log(gen.next().value);">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>WeakMap</h2>
+      <pre><code>const wm = new WeakMap(); const obj = {}; wm.set(obj, 'value');</code></pre>
+      <button class="copy-btn" data-code="const wm = new WeakMap(); const obj = {}; wm.set(obj, 'value');">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>WeakSet</h2>
+      <pre><code>const ws = new WeakSet(); const obj = {}; ws.add(obj);</code></pre>
+      <button class="copy-btn" data-code="const ws = new WeakSet(); const obj = {}; ws.add(obj);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Set</h2>
+      <pre><code>const set = new Set([1, 2, 2, 3]); set.add(4);</code></pre>
+      <button class="copy-btn" data-code="const set = new Set([1, 2, 2, 3]); set.add(4);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Map</h2>
+      <pre><code>const map = new Map(); map.set('key', 'value'); const value = map.get('key');</code></pre>
+      <button class="copy-btn"
+        data-code="const map = new Map(); map.set('key', 'value'); const value = map.get('key');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Promise.all</h2>
+      <pre><code>Promise.all([promise1, promise2]).then(results => { /* Handle results */ });</code></pre>
+      <button class="copy-btn"
+        data-code="Promise.all([promise1, promise2]).then(results => { /* Handle results */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Promise.race</h2>
+      <pre><code>Promise.race([promise1, promise2]).then(result => { /* Handle result */ });</code></pre>
+      <button class="copy-btn"
+        data-code="Promise.race([promise1, promise2]).then(result => { /* Handle result */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Includes</h2>
+      <pre><code>const contains = str.includes('substring');</code></pre>
+      <button class="copy-btn" data-code="const contains = str.includes('substring');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String StartsWith</h2>
+      <pre><code>const starts = str.startsWith('prefix');</code></pre>
+      <button class="copy-btn" data-code="const starts = str.startsWith('prefix');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String EndsWith</h2>
+      <pre><code>const ends = str.endsWith('suffix');</code></pre>
+      <button class="copy-btn" data-code="const ends = str.endsWith('suffix');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Repeat</h2>
+      <pre><code>const repeated = str.repeat(3);</code></pre>
+      <button class="copy-btn" data-code="const repeated = str.repeat(3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Find</h2>
+      <pre><code>const found = numbers.find(num => num > 3);</code></pre>
+      <button class="copy-btn" data-code="const found = numbers.find(num => num > 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array FindIndex</h2>
+      <pre><code>const index = numbers.findIndex(num => num > 3);</code></pre>
+      <button class="copy-btn" data-code="const index = numbers.findIndex(num => num > 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Some</h2>
+      <pre><code>const hasEven = numbers.some(num => num % 2 === 0);</code></pre>
+      <button class="copy-btn" data-code="const hasEven = numbers.some(num => num % 2 === 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Every</h2>
+      <pre><code>const allEven = numbers.every(num => num % 2 === 0);</code></pre>
+      <button class="copy-btn" data-code="const allEven = numbers.every(num => num % 2 === 0);">Copy Code</button>
+    </div>
+    <div class="cheat">
+      <h2>Array Map</h2>
+      <pre><code>const doubled = numbers.map(num => num * 2);</code></pre>
+      <button class="copy-btn" data-code="const doubled = numbers.map(num => num * 2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Filter</h2>
+      <pre><code>const evens = numbers.filter(num => num % 2 === 0);</code></pre>
+      <button class="copy-btn" data-code="const evens = numbers.filter(num => num % 2 === 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Reduce</h2>
+      <pre><code>const sum = numbers.reduce((acc, num) => acc + num, 0);</code></pre>
+      <button class="copy-btn" data-code="const sum = numbers.reduce((acc, num) => acc + num, 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array forEach</h2>
+      <pre><code>numbers.forEach(num => console.log(num));</code></pre>
+      <button class="copy-btn" data-code="numbers.forEach(num => console.log(num));">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object.keys</h2>
+      <pre><code>const keys = Object.keys(obj);</code></pre>
+      <button class="copy-btn" data-code="const keys = Object.keys(obj);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object.values</h2>
+      <pre><code>const values = Object.values(obj);</code></pre>
+      <button class="copy-btn" data-code="const values = Object.values(obj);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object.entries</h2>
+      <pre><code>const entries = Object.entries(obj);</code></pre>
+      <button class="copy-btn" data-code="const entries = Object.entries(obj);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object.assign</h2>
+      <pre><code>const newObj = Object.assign({}, obj1, obj2);</code></pre>
+      <button class="copy-btn" data-code="const newObj = Object.assign({}, obj1, obj2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Object Spread</h2>
+      <pre><code>const newObj = { ...obj1, ...obj2 };</code></pre>
+      <button class="copy-btn" data-code="const newObj = { ...obj1, ...obj2 };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Map Iteration</h2>
+      <pre><code>map.forEach((value, key) => { console.log(key, value); });</code></pre>
+      <button class="copy-btn" data-code="map.forEach((value, key) => { console.log(key, value); });">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Set Iteration</h2>
+      <pre><code>set.forEach(value => { console.log(value); });</code></pre>
+      <button class="copy-btn" data-code="set.forEach(value => { console.log(value); });">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Some</h2>
+      <pre><code>const hasNegative = numbers.some(num => num < 0);</code></pre>
+      <button class="copy-btn" data-code="const hasNegative = numbers.some(num => num < 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Every</h2>
+      <pre><code>const allPositive = numbers.every(num => num > 0);</code></pre>
+      <button class="copy-btn" data-code="const allPositive = numbers.every(num => num > 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Flat</h2>
+      <pre><code>const flattened = nestedArray.flat();</code></pre>
+      <button class="copy-btn" data-code="const flattened = nestedArray.flat();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array FlatMap</h2>
+      <pre><code>const flatMapped = nestedArray.flatMap(arr => arr);</code></pre>
+      <button class="copy-btn" data-code="const flatMapped = nestedArray.flatMap(arr => arr);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array FindIndex</h2>
+      <pre><code>const index = numbers.findIndex(num => num > 5);</code></pre>
+      <button class="copy-btn" data-code="const index = numbers.findIndex(num => num > 5);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array Reduce Right</h2>
+      <pre><code>const result = numbers.reduceRight((acc, num) => acc + num, 0);</code></pre>
+      <button class="copy-btn" data-code="const result = numbers.reduceRight((acc, num) => acc + num, 0);">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array from</h2>
+      <pre><code>const arr = Array.from('hello');</code></pre>
+      <button class="copy-btn" data-code="const arr = Array.from('hello');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array of</h2>
+      <pre><code>const arr = Array.of(1, 2, 3);</code></pre>
+      <button class="copy-btn" data-code="const arr = Array.of(1, 2, 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array isArray</h2>
+      <pre><code>const isArray = Array.isArray([]);</code></pre>
+      <button class="copy-btn" data-code="const isArray = Array.isArray([]);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array includes</h2>
+      <pre><code>const includes = arr.includes(2);</code></pre>
+      <button class="copy-btn" data-code="const includes = arr.includes(2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array indexOf</h2>
+      <pre><code>const index = arr.indexOf(2);</code></pre>
+      <button class="copy-btn" data-code="const index = arr.indexOf(2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array join</h2>
+      <pre><code>const str = arr.join('-');</code></pre>
+      <button class="copy-btn" data-code="const str = arr.join('-');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array slice</h2>
+      <pre><code>const sliced = arr.slice(1, 3);</code></pre>
+      <button class="copy-btn" data-code="const sliced = arr.slice(1, 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array splice</h2>
+      <pre><code>arr.splice(1, 2, 'new');</code></pre>
+      <button class="copy-btn" data-code="arr.splice(1, 2, 'new');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array sort</h2>
+      <pre><code>const sorted = arr.sort();</code></pre>
+      <button class="copy-btn" data-code="const sorted = arr.sort();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array reverse</h2>
+      <pre><code>const reversed = arr.reverse();</code></pre>
+      <button class="copy-btn" data-code="const reversed = arr.reverse();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array fill</h2>
+      <pre><code>const filled = arr.fill('x');</code></pre>
+      <button class="copy-btn" data-code="const filled = arr.fill('x');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array copyWithin</h2>
+      <pre><code>const copy = arr.copyWithin(0, 1, 3);</code></pre>
+      <button class="copy-btn" data-code="const copy = arr.copyWithin(0, 1, 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array find</h2>
+      <pre><code>const found = arr.find(num => num > 2);</code></pre>
+      <button class="copy-btn" data-code="const found = arr.find(num => num > 2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array findLast</h2>
+      <pre><code>const lastFound = arr.findLast(num => num < 5);</code></pre>
+      <button class="copy-btn" data-code="const lastFound = arr.findLast(num => num < 5);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array toString</h2>
+      <pre><code>const str = arr.toString();</code></pre>
+      <button class="copy-btn" data-code="const str = arr.toString();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array concat</h2>
+      <pre><code>const combined = arr.concat([4, 5]);</code></pre>
+      <button class="copy-btn" data-code="const combined = arr.concat([4, 5]);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array some</h2>
+      <pre><code>const some = arr.some(val => val > 5);</code></pre>
+      <button class="copy-btn" data-code="const some = arr.some(val => val > 5);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array every</h2>
+      <pre><code>const every = arr.every(val => val > 0);</code></pre>
+      <button class="copy-btn" data-code="const every = arr.every(val => val > 0);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array findIndex</h2>
+      <pre><code>const index = arr.findIndex(val => val > 3);</code></pre>
+      <button class="copy-btn" data-code="const index = arr.findIndex(val => val > 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array findLastIndex</h2>
+      <pre><code>const lastIndex = arr.findLastIndex(val => val > 3);</code></pre>
+      <button class="copy-btn" data-code="const lastIndex = arr.findLastIndex(val => val > 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array flatMap</h2>
+      <pre><code>const flatMapped = arr.flatMap(val => [val * 2]);</code></pre>
+      <button class="copy-btn" data-code="const flatMapped = arr.flatMap(val => [val * 2]);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Array toLocaleString</h2>
+      <pre><code>const localeStr = arr.toLocaleString();</code></pre>
+      <button class="copy-btn" data-code="const localeStr = arr.toLocaleString();">Copy Code</button>
+    </div>
+    <div class="cheat">
+      <h2>String Length</h2>
+      <pre><code>const length = str.length;</code></pre>
+      <button class="copy-btn" data-code="const length = str.length;">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String toUpperCase</h2>
+      <pre><code>const upperStr = str.toUpperCase();</code></pre>
+      <button class="copy-btn" data-code="const upperStr = str.toUpperCase();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String toLowerCase</h2>
+      <pre><code>const lowerStr = str.toLowerCase();</code></pre>
+      <button class="copy-btn" data-code="const lowerStr = str.toLowerCase();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Trim</h2>
+      <pre><code>const trimmed = str.trim();</code></pre>
+      <button class="copy-btn" data-code="const trimmed = str.trim();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Slice</h2>
+      <pre><code>const sliced = str.slice(1, 4);</code></pre>
+      <button class="copy-btn" data-code="const sliced = str.slice(1, 4);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Substring</h2>
+      <pre><code>const substring = str.substring(1, 4);</code></pre>
+      <button class="copy-btn" data-code="const substring = str.substring(1, 4);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Substr</h2>
+      <pre><code>const substr = str.substr(1, 3);</code></pre>
+      <button class="copy-btn" data-code="const substr = str.substr(1, 3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String IndexOf</h2>
+      <pre><code>const index = str.indexOf('text');</code></pre>
+      <button class="copy-btn" data-code="const index = str.indexOf('text');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String LastIndexOf</h2>
+      <pre><code>const lastIndex = str.lastIndexOf('text');</code></pre>
+      <button class="copy-btn" data-code="const lastIndex = str.lastIndexOf('text');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Includes</h2>
+      <pre><code>const includes = str.includes('text');</code></pre>
+      <button class="copy-btn" data-code="const includes = str.includes('text');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String StartsWith</h2>
+      <pre><code>const startsWith = str.startsWith('text');</code></pre>
+      <button class="copy-btn" data-code="const startsWith = str.startsWith('text');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String EndsWith</h2>
+      <pre><code>const endsWith = str.endsWith('text');</code></pre>
+      <button class="copy-btn" data-code="const endsWith = str.endsWith('text');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Replace</h2>
+      <pre><code>const replaced = str.replace('old', 'new');</code></pre>
+      <button class="copy-btn" data-code="const replaced = str.replace('old', 'new');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Split</h2>
+      <pre><code>const parts = str.split(' ');</code></pre>
+      <button class="copy-btn" data-code="const parts = str.split(' ');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Repeat</h2>
+      <pre><code>const repeated = str.repeat(3);</code></pre>
+      <button class="copy-btn" data-code="const repeated = str.repeat(3);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String CharAt</h2>
+      <pre><code>const char = str.charAt(2);</code></pre>
+      <button class="copy-btn" data-code="const char = str.charAt(2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String CharCodeAt</h2>
+      <pre><code>const code = str.charCodeAt(2);</code></pre>
+      <button class="copy-btn" data-code="const code = str.charCodeAt(2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String CodePointAt</h2>
+      <pre><code>const codePoint = str.codePointAt(2);</code></pre>
+      <button class="copy-btn" data-code="const codePoint = str.codePointAt(2);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Normalize</h2>
+      <pre><code>const normalized = str.normalize();</code></pre>
+      <button class="copy-btn" data-code="const normalized = str.normalize();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Anchor</h2>
+      <pre><code>const anchored = str.anchor('name');</code></pre>
+      <button class="copy-btn" data-code="const anchored = str.anchor('name');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Link</h2>
+      <pre><code>const linked = str.link('http://example.com');</code></pre>
+      <button class="copy-btn" data-code="const linked = str.link('http://example.com');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String FontSize</h2>
+      <pre><code>const fontSize = str.fontsize(4);</code></pre>
+      <button class="copy-btn" data-code="const fontSize = str.fontsize(4);">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Big</h2>
+      <pre><code>const bigStr = str.big();</code></pre>
+      <button class="copy-btn" data-code="const bigStr = str.big();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Small</h2>
+      <pre><code>const smallStr = str.small();</code></pre>
+      <button class="copy-btn" data-code="const smallStr = str.small();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Sup</h2>
+      <pre><code>const superscript = str.sup();</code></pre>
+      <button class="copy-btn" data-code="const superscript = str.sup();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Sub</h2>
+      <pre><code>const subscript = str.sub();</code></pre>
+      <button class="copy-btn" data-code="const subscript = str.sub();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Blink</h2>
+      <pre><code>const blinkStr = str.blink();</code></pre>
+      <button class="copy-btn" data-code="const blinkStr = str.blink();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Italics</h2>
+      <pre><code>const italicsStr = str.italics();</code></pre>
+      <button class="copy-btn" data-code="const italicsStr = str.italics();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Strike</h2>
+      <pre><code>const strikeStr = str.strike();</code></pre>
+      <button class="copy-btn" data-code="const strikeStr = str.strike();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>String Underline</h2>
+      <pre><code>const underlineStr = str.underline();</code></pre>
+      <button class="copy-btn" data-code="const strikeStr = str.underline();">Copy Code</button>
+    </div>
+    <div class="cheat">
+      <h2>Function Initialization - Named Function</h2>
+      <pre><code>function myFunction() { /* Function body */ }</code></pre>
+      <button class="copy-btn" data-code="function myFunction() { /* Function body */ }">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Anonymous Function</h2>
+      <pre><code>const myFunction = function() { /* Function body */ };</code></pre>
+      <button class="copy-btn" data-code="const myFunction = function() { /* Function body */ };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Arrow Function</h2>
+      <pre><code>const myFunction = () => { /* Function body */ };</code></pre>
+      <button class="copy-btn" data-code="const myFunction = () => { /* Function body */ };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Immediately Invoked Function Expression (IIFE)</h2>
+      <pre><code>(function() { /* Function body */ })();</code></pre>
+      <button class="copy-btn" data-code="(function() { /* Function body */ })();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Function Constructor</h2>
+      <pre><code>const myFunction = new Function('/* Function body */');</code></pre>
+      <button class="copy-btn" data-code="const myFunction = new Function('/* Function body */');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Click</h2>
+      <pre><code>element.addEventListener('click', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('click', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseover</h2>
+      <pre><code>element.addEventListener('mouseover', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseover', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseout</h2>
+      <pre><code>element.addEventListener('mouseout', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseout', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseenter</h2>
+      <pre><code>element.addEventListener('mouseenter', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseenter', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseleave</h2>
+      <pre><code>element.addEventListener('mouseleave', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseleave', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keydown</h2>
+      <pre><code>element.addEventListener('keydown', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('keydown', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keyup</h2>
+      <pre><code>element.addEventListener('keyup', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('keyup', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keypress</h2>
+      <pre><code>element.addEventListener('keypress', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('keypress', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Submit</h2>
+      <pre><code>form.addEventListener('submit', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="form.addEventListener('submit', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Change</h2>
+      <pre><code>element.addEventListener('change', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('change', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Input</h2>
+      <pre><code>element.addEventListener('input', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('input', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Focus</h2>
+      <pre><code>element.addEventListener('focus', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('focus', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Blur</h2>
+      <pre><code>element.addEventListener('blur', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('blur', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Resize</h2>
+      <pre><code>window.addEventListener('resize', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('resize', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Scroll</h2>
+      <pre><code>window.addEventListener('scroll', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('scroll', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Load</h2>
+      <pre><code>window.addEventListener('load', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('load', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Unload</h2>
+      <pre><code>window.addEventListener('unload', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('unload', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Beforeunload</h2>
+      <pre><code>window.addEventListener('beforeunload', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="window.addEventListener('beforeunload', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Drag</h2>
+      <pre><code>element.addEventListener('drag', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('drag', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Drop</h2>
+      <pre><code>element.addEventListener('drop', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('drop', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Dragover</h2>
+      <pre><code>element.addEventListener('dragover', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('dragover', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Contextmenu</h2>
+      <pre><code>element.addEventListener('contextmenu', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('contextmenu', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchstart</h2>
+      <pre><code>element.addEventListener('touchstart', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchstart', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchend</h2>
+      <pre><code>element.addEventListener('touchend', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchend', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchmove</h2>
+      <pre><code>element.addEventListener('touchmove', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchmove', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchcancel</h2>
+      <pre><code>element.addEventListener('touchcancel', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchcancel', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+    <div class="cheat">
+      <h2>Function Initialization - Named Function</h2>
+      <pre><code>function myFunction() { /* Function body */ }</code></pre>
+      <button class="copy-btn" data-code="function myFunction() { /* Function body */ }">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Anonymous Function</h2>
+      <pre><code>const myFunction = function() { /* Function body */ };</code></pre>
+      <button class="copy-btn" data-code="const myFunction = function() { /* Function body */ };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Arrow Function</h2>
+      <pre><code>const myFunction = () => { /* Function body */ };</code></pre>
+      <button class="copy-btn" data-code="const myFunction = () => { /* Function body */ };">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Immediately Invoked Function Expression (IIFE)</h2>
+      <pre><code>(function() { /* Function body */ })();</code></pre>
+      <button class="copy-btn" data-code="(function() { /* Function body */ })();">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Function Initialization - Function Constructor</h2>
+      <pre><code>const myFunction = new Function('/* Function body */');</code></pre>
+      <button class="copy-btn" data-code="const myFunction = new Function('/* Function body */');">Copy Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Click</h2>
+      <pre><code>element.addEventListener('click', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('click', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseover</h2>
+      <pre><code>element.addEventListener('mouseover', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseover', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseout</h2>
+      <pre><code>element.addEventListener('mouseout', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseout', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseenter</h2>
+      <pre><code>element.addEventListener('mouseenter', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseenter', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Mouseleave</h2>
+      <pre><code>element.addEventListener('mouseleave', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('mouseleave', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keydown</h2>
+      <pre><code>element.addEventListener('keydown', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('keydown', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keyup</h2>
+      <pre><code>element.addEventListener('keyup', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('keyup', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Keypress</h2>
+      <pre><code>element.addEventListener('keypress', (event) => { /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('keypress', (event) => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Submit</h2>
+      <pre><code>form.addEventListener('submit', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="form.addEventListener('submit', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Change</h2>
+      <pre><code>element.addEventListener('change', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('change', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Input</h2>
+      <pre><code>element.addEventListener('input', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('input', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Focus</h2>
+      <pre><code>element.addEventListener('focus', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('focus', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Blur</h2>
+      <pre><code>element.addEventListener('blur', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('blur', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Resize</h2>
+      <pre><code>window.addEventListener('resize', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('resize', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Scroll</h2>
+      <pre><code>window.addEventListener('scroll', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('scroll', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Load</h2>
+      <pre><code>window.addEventListener('load', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('load', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Unload</h2>
+      <pre><code>window.addEventListener('unload', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="window.addEventListener('unload', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Beforeunload</h2>
+      <pre><code>window.addEventListener('beforeunload', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="window.addEventListener('beforeunload', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Drag</h2>
+      <pre><code>element.addEventListener('drag', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('drag', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Drop</h2>
+      <pre><code>element.addEventListener('drop', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('drop', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Dragover</h2>
+      <pre><code>element.addEventListener('dragover', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('dragover', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Contextmenu</h2>
+      <pre><code>element.addEventListener('contextmenu', (event) => { event.preventDefault(); /* Event handler */ });</code></pre>
+      <button class="copy-btn"
+        data-code="element.addEventListener('contextmenu', (event) => { event.preventDefault(); /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchstart</h2>
+      <pre><code>element.addEventListener('touchstart', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchstart', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchend</h2>
+      <pre><code>element.addEventListener('touchend', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchend', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchmove</h2>
+      <pre><code>element.addEventListener('touchmove', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchmove', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+
+    <div class="cheat">
+      <h2>Event Listener - Touchcancel</h2>
+      <pre><code>element.addEventListener('touchcancel', () => { /* Event handler */ });</code></pre>
+      <button class="copy-btn" data-code="element.addEventListener('touchcancel', () => { /* Event handler */ });">Copy
+        Code</button>
+    </div>
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>
